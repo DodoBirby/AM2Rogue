@@ -1,4 +1,5 @@
 var jump_vel, splash;
+global.destination = undefined
 if global.enablecontrol
     chStepControl()
 if global.movingobj
@@ -348,9 +349,9 @@ if platformCharacterIs(IN_AIR)
     if (yVel < 0 && state == AIRBALL)
     {
         if (isCollisionUpRight() == 1 && kRight == 0)
-            x -= ((1 + statetime < 2) + statetime < 4)
+            x -= ((1 + statetime) < (2 + statetime)) < 4
         if (isCollisionUpLeft() == 1 && kLeft == 0)
-            x += ((1 + statetime < 2) + statetime < 4)
+            x += ((1 + statetime) < (2 + statetime)) < 4
     }
     if (vjump == 0 && dash == 0 && state != AIRBALL)
     {
@@ -1148,7 +1149,6 @@ if (state == SAVINGFX)
         instance_create(x, y, oSaveFX)
         instance_create(x, y, oSaveSparks)
         popup_text(get_text("Notifications", "GameSaved"))
-        save_game(("save" + string((global.saveslot + 1))))
         refill_heath_ammo()
     }
     if (statetime == 230)
@@ -3284,4 +3284,9 @@ if (ballbounce > 0)
     ballbounce -= 1
 statetime += 1
 if (state != IDLE && state != SAVING && state != SAVINGFX && state != SAVINGSHIP && state != SAVINGSHIPFX)
-    global.gametime += 1
+    global.gametime -= 1
+if (global.gametime <= 0)
+{
+    with (oControl)
+        event_user(1)
+}

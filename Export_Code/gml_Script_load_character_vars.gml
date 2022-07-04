@@ -60,5 +60,7 @@ repeat (350)
     global.item[i] = 0
 }
 global.item[1] = 1
+for (i = 0; i < 450; i++)
+    global.usedsave[i] = 0
 reset_logs_list()
 reset_hints()

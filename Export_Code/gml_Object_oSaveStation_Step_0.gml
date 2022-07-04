@@ -14,6 +14,8 @@ if (saveenabled == 1 && cansave == 1 && (oCharacter.state == 10 || oCharacter.st
 {
     if (oControl.mod_insanitymode == 1)
         exit
+    if (global.usedsave[room] == 1)
+        exit
     global.savexpos = (x + 16)
     saveenabled = 0
     with (oCharacter)
@@ -30,6 +32,8 @@ if (saveenabled == 1 && cansave == 1 && (oCharacter.state == 10 || oCharacter.st
     global.start_room = room
     global.save_x = (x + 16)
     global.save_y = y
+    global.usedsave[room] = 1
+    sprite_index = sSaveBroken
 }
 if (oCharacter.state == 33 && distance_to_point(oCharacter.x, oCharacter.y < 64))
     saveenabled = 0

@@ -3,6 +3,7 @@ if (((direction == 0 || direction == 180) && oCharacter.y <= (y + 8) && oCharact
 {
     if ((direction == 0 && oCharacter.x > (x - 4) && oCharacter.x < (x + 16)) || (direction == 180 && oCharacter.x < (x + 4) && oCharacter.x > (x - 16)) || (direction == 90 && oCharacter.y < (y + 4) && oCharacter.y > (y - 16)) || (direction == 270 && oCharacter.y > (y - 4) && oCharacter.y < (y + 16)))
     {
+        Rogue_transition_code()
         global.targetx = targetx
         global.targety = targety
         global.camstartx = camstartx

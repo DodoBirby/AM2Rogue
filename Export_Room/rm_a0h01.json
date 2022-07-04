@@ -4377,6 +4377,20 @@
       "pre_create_code": null,
       "image_speed": 0,
       "image_index": 0
+    },
+    {
+      "x": 3664,
+      "y": 1104,
+      "object_definition": "oItemBall",
+      "instance_id": 150360,
+      "creation_code": "gml_RoomCC_rm_a1a04_4399_Create",
+      "scale_x": 1,
+      "scale_y": 1,
+      "color": 4294967295,
+      "rotation": 0,
+      "pre_create_code": null,
+      "image_speed": 0,
+      "image_index": 0
     }
   ],
   "tiles": [

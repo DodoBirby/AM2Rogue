@@ -1367,6 +1367,34 @@
       "pre_create_code": null,
       "image_speed": 0,
       "image_index": 0
+    },
+    {
+      "x": 0,
+      "y": 576,
+      "object_definition": "oDoor",
+      "instance_id": 150358,
+      "creation_code": "Bossdoor_Create",
+      "scale_x": 1,
+      "scale_y": 1,
+      "color": 4294967295,
+      "rotation": 0,
+      "pre_create_code": null,
+      "image_speed": 0,
+      "image_index": 0
+    },
+    {
+      "x": -16,
+      "y": 560,
+      "object_definition": "oSolid2x1",
+      "instance_id": 150359,
+      "creation_code": null,
+      "scale_x": 1,
+      "scale_y": 1,
+      "color": 4294967295,
+      "rotation": 0,
+      "pre_create_code": null,
+      "image_speed": 0,
+      "image_index": 0
     }
   ],
   "tiles": [

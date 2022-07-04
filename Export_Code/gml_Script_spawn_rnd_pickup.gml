@@ -1,4 +1,5 @@
 var xx, yy, spawnX;
+comment = 1
 if (random(100) < argument0)
 {
     if (canbeX == 1)
@@ -13,7 +14,7 @@ if (random(100) < argument0)
         pickup = irandom(4)
     if (pickup == 0)
     {
-        if ((global.playerhealth < global.maxhealth && instance_number(oHPickup) < 6) || (oControl.mod_fusion == 1 && spawnX == 1 && canbeX && instance_number(oHPickup) < 6))
+        if ((global.playerhealth < global.maxhealth && instance_number(oHPickup) < 6 && comment == 0) || (oControl.mod_fusion == 1 && spawnX == 1 && canbeX && instance_number(oHPickup) < 6))
         {
             if (oControl.mod_fusion == 1 && canbeX == 1)
                 xParasite = instance_create(xx, yy, oHXPickup)
@@ -25,7 +26,7 @@ if (random(100) < argument0)
     }
     if (pickup == 1)
     {
-        if ((global.playerhealth < global.maxhealth && instance_number(oHPickupBig) < 3) || (oControl.mod_fusion == 1 && spawnX == 1 && canbeX && instance_number(oHPickupBig) < 3))
+        if ((global.playerhealth < global.maxhealth && instance_number(oHPickupBig) < 3 && comment == 0) || (oControl.mod_fusion == 1 && spawnX == 1 && canbeX && instance_number(oHPickupBig) < 3))
         {
             if (oControl.mod_fusion == 1 && canbeX == 1)
                 xParasite = instance_create(xx, yy, oHXPickupBig)

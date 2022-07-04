@@ -1,5 +1,16 @@
 if (room != rm_transition)
 {
+    if (!is_undefined(global.destination))
+    {
+        with (global.destination)
+        {
+            if (global.direction == 0)
+                global.targetx = (x + 16)
+            else
+                global.targetx = (x - 16)
+            global.targety = y
+        }
+    }
     x = (global.targetx + global.offsetx)
     y = (global.targety + global.offsety)
     if (global.event[304] == 1)

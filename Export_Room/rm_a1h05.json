@@ -3301,20 +3301,6 @@
       "image_index": 0
     },
     {
-      "x": 1216,
-      "y": 864,
-      "object_definition": "oBlockBomb",
-      "instance_id": 108024,
-      "creation_code": "gml_RoomCC_rm_a1h05_4329_Create",
-      "scale_x": 1,
-      "scale_y": 1,
-      "color": 4294967295,
-      "rotation": 0,
-      "pre_create_code": null,
-      "image_speed": 0,
-      "image_index": 0
-    },
-    {
       "x": 0,
       "y": 1120,
       "object_definition": "oGotoRoom",
@@ -3581,20 +3567,6 @@
       "image_index": 0
     },
     {
-      "x": 1184,
-      "y": 832,
-      "object_definition": "oElderSeptogg",
-      "instance_id": 108044,
-      "creation_code": "gml_RoomCC_rm_a1h05_4344_Create",
-      "scale_x": 1,
-      "scale_y": 1,
-      "color": 4294967295,
-      "rotation": 0,
-      "pre_create_code": null,
-      "image_speed": 0,
-      "image_index": 0
-    },
-    {
       "x": 640,
       "y": 1120,
       "object_definition": "oSolid4x1",
@@ -3642,6 +3614,20 @@
       "object_definition": "oSolid1",
       "instance_id": 108048,
       "creation_code": null,
+      "scale_x": 1,
+      "scale_y": 1,
+      "color": 4294967295,
+      "rotation": 0,
+      "pre_create_code": null,
+      "image_speed": 0,
+      "image_index": 0
+    },
+    {
+      "x": 3065,
+      "y": 965,
+      "object_definition": "oElderSeptogg",
+      "instance_id": 150361,
+      "creation_code": "gml_RoomCC_rm_a1h05_4344_Create",
       "scale_x": 1,
       "scale_y": 1,
       "color": 4294967295,

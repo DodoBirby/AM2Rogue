@@ -25,6 +25,14 @@ switch room
 
 if (global.transitiontype == 1)
 {
+    if (global.destination != undefined)
+    {
+        with (global.destination)
+        {
+            global.camstartx = x
+            global.camstarty = y
+        }
+    }
     x = global.camstartx
     y = global.camstarty
     lockx = 0
